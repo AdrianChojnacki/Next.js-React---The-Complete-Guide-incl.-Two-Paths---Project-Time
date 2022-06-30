@@ -31,7 +31,9 @@ export default function FilteredEventsPage() {
   ) {
     return (
       <Fragment>
-        <ErrorAlert>Invalid filter. Please adjust your values.</ErrorAlert>
+        <ErrorAlert>
+          <p>Invalid filter. Please adjust your values.</p>
+        </ErrorAlert>
         <div className="center">
           <Button link="/events">Show All Events</Button>
         </div>
@@ -47,7 +49,9 @@ export default function FilteredEventsPage() {
   if (!filteredEvents || filteredEvents.length === 0) {
     return (
       <Fragment>
-        <ErrorAlert>No events found for the chosen filter.</ErrorAlert>
+        <ErrorAlert>
+          <p>No events found for the chosen filter.</p>
+        </ErrorAlert>
         <div className="center">
           <Button link="/events">Show All Events</Button>
         </div>
